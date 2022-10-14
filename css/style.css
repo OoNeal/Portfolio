@@ -59,22 +59,12 @@ body {
 }
 
 .firstPage__content_title_shadows_around {
-    position: absolute;
-    margin: 0;
+    margin: -10%;
     opacity: 0.10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: red;
 }
 
 #firstPage__content_title_shadows_middle {
-    position: absolute;
-
     margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0.15;
 }
 
