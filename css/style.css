@@ -46,6 +46,9 @@ body {
 
     background: radial-gradient(30% 15% at 50% 50%, #ff9b00 0%, rgba(255, 153, 0, 0.0) 50%);
     filter: blur(100px);
+
+    animation-duration: 3500ms;
+    animation-name: light;
 }
 
 /*... Need animation...*/
@@ -59,23 +62,44 @@ body {
 }
 
 .firstPage__content_title_shadows_around {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: fit-content;
 
     opacity: 0.10;
+
+    animation-duration: 1500ms;
+    animation-name: shadow;
 }
 
+#firstPage__content_title_shadows_top{
+    margin-block-end: auto;
+}
+
+#firstPage__content_title_shadows_bottom{
+    margin-block-start: auto;
+}
 #firstPage__content_title_shadows_middle {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     opacity: 0.15;
+}
+
+@-webkit-keyframes shadow {
+    0% {
+        opacity: 0.10;
+        margin: 0;
+    }
+    100% {
+        position: initial;
+    }
+}
+
+@-webkit-keyframes light {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 100;
+    }
 }
 
 /* ... Need adaptative for resizing ... */
