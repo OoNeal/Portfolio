@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap);
 
 body {
     /* need min size for screen*/
-
+    max-height: 200vh;
     overflow: hidden;
+    overflow-y: auto;
+
     margin: 0;
     padding: 0;
 
@@ -13,13 +15,12 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-.firstPage {
+#firstPage{
     height: 100vh;
-    width: 100%;
 }
 
-.firstPage__content {
-    height: 100vh;
+#firstPage__content {
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -33,39 +34,69 @@ body {
     text-transform: uppercase;
 }
 
-.firstPage__content_title {
+#firstPage__content_title {
     position: absolute;
     z-index: 1;
 
     color: #8B8B8B;
 }
 
-.firstPage__content_title_light {
+#firstPage__content_title_light {
     width: 100%;
     height: 100%;
 
     background: radial-gradient(30% 15% at 50% 50%, #ff9b00 0%, rgba(255, 153, 0, 0.0) 50%);
     filter: blur(100px);
-}
 
-/*... Need animation...*/
+    animation-duration: 1500ms;
+    animation-name: light;
+}
 
 .firstPage__content_title_shadows {
     position: absolute;
     color: #8B8B8B;
     font-size: 96px;
     white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
-.firstPage__content_title_shadows_around {
-    margin: -10%;
+#firstPage__content_title_shadows_top {
+    margin-block-end: auto;
     opacity: 0.10;
 }
 
-#firstPage__content_title_shadows_middle {
-    margin: 0;
+.firstPage__content_title_shadows:nth-child(3) {
     opacity: 0.15;
+}
+
+#firstPage__content_title_shadows_bottom {
+    margin-block-start: auto;
+    opacity: 0.10;
+}
+
+.firstPage__content_title_shadows_around {
+    height: fit-content;
+
+    animation-duration: 1500ms;
+    animation-name: shadow;
+}
+
+@-webkit-keyframes shadow {
+    0% {
+        opacity: 0.10;
+        margin: 0;
+    }
+    100% {
+        position: initial;
+    }
+}
+
+@-webkit-keyframes light {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* ... Need adaptative for resizing ... */
