@@ -6,15 +6,27 @@ body {
 
     overflow: hidden;
     overflow-y: scroll;
-    scroll-behavior: smooth;
-    -ms-scrollbar-base-color: grey;
 
-    height: 200vh;
+    height: 100vh;
 
     background-color: #000000;
 
     color: #ffffff;
     font-family: Montserrat, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #616161;
+    border-radius: 10px;
 }
 
 a:first-child {
@@ -46,7 +58,7 @@ a:first-child {
     height: 7.5vw;
 
     animation-duration: 1500ms;
-    animation-name: light
+    animation-name: appear;
 }
 
 #firstPage__github_logo {
@@ -60,9 +72,9 @@ a:first-child {
 
     width: 100%;
     height: 100%;
-    background: radial-gradient(#ffffff 0%,#ffffff 30%, #ff9b00 90%);
+    background: radial-gradient(#ffffff 0%, #ffffff 30%, #ff9b00 90%);
     filter: blur(20px);
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 /* ------------- First Page text -------------*/
@@ -76,7 +88,6 @@ a:first-child {
     align-items: center;
     flex-direction: column;
 
-    text-align: center;
     font-weight: 600;
     font-size: 3.5vw;
     text-transform: uppercase;
@@ -97,7 +108,7 @@ a:first-child {
     filter: blur(100px);
 
     animation-duration: 1500ms;
-    animation-name: light;
+    animation-name: appear;
 }
 
 .firstPage__text_title_shadows {
@@ -114,7 +125,7 @@ a:first-child {
 }
 
 .firstPage__text_title_shadows:nth-child(3) {
-    opacity: 0.15;
+    opacity: 0.20;
 }
 
 .firstPage__text_title_shadows:nth-child(2) {
@@ -122,10 +133,11 @@ a:first-child {
     opacity: 0.10;
 }
 
-.shadow{
+.shadow {
     animation-duration: 1500ms;
     animation-name: shadow;
 }
+
 /* ------------- First Page text Animation -------------*/
 
 @-webkit-keyframes shadow {
@@ -134,7 +146,7 @@ a:first-child {
     }
 }
 
-@-webkit-keyframes light {
+@-webkit-keyframes appear {
     0% {
         filter: blur(10px);
         opacity: 0.0;
@@ -143,5 +155,3 @@ a:first-child {
         opacity: 1;
     }
 }
-
-/* ... Need adaptative for resizing ... */
