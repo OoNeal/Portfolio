@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap);
 
 body {
-    /* need min size for screen*/
-    max-height: 200vh;
-    overflow: hidden;
-    overflow-y: auto;
-
     margin: 0;
     padding: 0;
+
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-scrollbar-base-color: grey;
+
+    height: 200vh;
 
     background-color: #000000;
 
@@ -15,11 +17,57 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-#firstPage{
+a:first-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+/* ------------- First Page ------------- */
+
+#firstPage {
     height: 100vh;
 }
 
-#firstPage__content {
+/* ------------- First Page Github Logo ------------- */
+
+#firstPage__github {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8vw;
+    height: 7.5vw;
+
+    animation-duration: 1500ms;
+    animation-name: light
+}
+
+#firstPage__github_logo {
+    width: 100%;
+    height: 100%;
+}
+
+#firstPage__github_light {
+    position: relative;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#ffffff 0%,#ffffff 30%, #ff9b00 90%);
+    filter: blur(20px);
+    border-radius: 50%;
+}
+
+/* ------------- First Page text -------------*/
+
+#firstPage__text {
     height: 100%;
     width: 100%;
 
@@ -30,68 +78,65 @@ body {
 
     text-align: center;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3.5vw;
     text-transform: uppercase;
 }
 
-#firstPage__content_title {
+#firstPage__text_title {
     position: absolute;
     z-index: 1;
 
     color: #8B8B8B;
 }
 
-#firstPage__content_title_light {
+#firstPage__text_title_light {
     width: 100%;
     height: 100%;
 
-    background: radial-gradient(30% 15% at 50% 50%, #ff9b00 0%, rgba(255, 153, 0, 0.0) 50%);
+    background: radial-gradient(30% 15% at 50% 50%, #cc6e11 0%, rgba(255, 153, 0, 0.0) 50%);
     filter: blur(100px);
 
     animation-duration: 1500ms;
     animation-name: light;
 }
 
-.firstPage__content_title_shadows {
+.firstPage__text_title_shadows {
     position: absolute;
+
+    font-size: 6.5vw;
     color: #8B8B8B;
-    font-size: 96px;
     white-space: nowrap;
 }
 
-#firstPage__content_title_shadows_top {
-    margin-block-end: auto;
+.firstPage__text_title_shadows:nth-child(4) {
+    margin-bottom: 10%;
     opacity: 0.10;
 }
 
-.firstPage__content_title_shadows:nth-child(3) {
+.firstPage__text_title_shadows:nth-child(3) {
     opacity: 0.15;
 }
 
-#firstPage__content_title_shadows_bottom {
-    margin-block-start: auto;
+.firstPage__text_title_shadows:nth-child(2) {
+    margin-top: 10%;
     opacity: 0.10;
 }
 
-.firstPage__content_title_shadows_around {
-    height: fit-content;
-
+.shadow{
     animation-duration: 1500ms;
     animation-name: shadow;
 }
+/* ------------- First Page text Animation -------------*/
 
 @-webkit-keyframes shadow {
     0% {
-        opacity: 0.10;
         margin: 0;
-    }
-    100% {
-        position: initial;
     }
 }
 
 @-webkit-keyframes light {
     0% {
+        filter: blur(10px);
         opacity: 0.0;
     }
     100% {
