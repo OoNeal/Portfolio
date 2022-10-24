@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!-- First Page -->
 <div id="firstPage">
-    <!--Addiing the Github Logo-->
-    <div id="firstPage__content">
+    <!--Github Logo-->
+    <div id="firstPage__github">
+        <a href="https://github.com/OoNeal/Portfolio" target="_blank">
+            <img alt="Github Logo" id="firstPage__github_logo" src="img/github.png">
+        </a>
+        <span id="firstPage__github_light"></span>
+    </div>
+    <!-- text -->
+    <div id="firstPage__text">
         <!-- Title -->
-        <div id="firstPage__content_title">
-            <h1>My Portfolio</h1>
-        </div>
+        <h1 id="firstPage__text_title">My Portfolio</h1>
         <!-- Shadow -->
-        <div class="firstPage__content_title_shadows">
-            <h1 id="firstPage__content_title_shadows_top" class="firstPage__content_title_shadows_around">My
-                Portfolio</h1>
-        </div>
-        <div class="firstPage__content_title_shadows">
+        <div class="firstPage__text_title_shadows shadow">
             <h1>My Portfolio</h1>
         </div>
-        <div class="firstPage__content_title_shadows">
-            <h1 id="firstPage__content_title_shadows_bottom" class="firstPage__content_title_shadows_around">My
-                Portfolio</h1>
+        <div class="firstPage__text_title_shadows">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="firstPage__text_title_shadows shadow">
+            <h1>My Portfolio</h1>
         </div>
 
         <!-- Light -->
-        <span id="firstPage__content_title_light"></span>
+        <span id="firstPage__text_title_light"></span>
     </div>
 </div>
+fezijàçjs
 <script src="scripts/animation.js"></script>
 </body>
 </html>
