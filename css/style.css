@@ -1,13 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap);
 
 body {
+
     margin: 0;
     padding: 0;
 
     overflow: hidden;
     overflow-y: scroll;
-
-    height: 200vh;
 
     background-color: #000000;
 
@@ -32,6 +31,7 @@ body {
 /* ------------- First Page ------------- */
 
 #firstPage {
+    margin-bottom: 300px;
     height: 100vh;
 }
 
@@ -161,13 +161,13 @@ body {
     height: 100vh;
 }
 
-#secondPage__presentation{
-
+#secondPage__presentation {
+    margin: 0;
     width: 100%;
 
 }
 
-#secondPage__presentation h2 {
+#secondPage__presentation_title {
     margin: 0;
     padding: 1em 0 0 0.5em;
 
@@ -181,19 +181,59 @@ body {
     color: transparent;
 }
 
-#secondPage__presentation div {
+#secondPage__presentation_text_container {
     margin: 0;
+    padding: 0 0 0 0.5em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondPage__presentation_text {
+    margin: 0 0 0 1em;
+
+    max-width: 40%;
+
+    font-size: 1.4em;
+}
+
+#secondPage__about {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+#secondPage__about_title_container {
+    position: absolute;
+    z-index: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
     width: 100%;
 }
-#secondPage__presentation p {
-    margin: 1em 0 0 0   ;
-    padding: 0 25vw
 
+#secondPage__about_title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 25vw;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background: linear-gradient(180.26deg, rgba(0, 0, 0, 0.24) 18.26%, rgba(111, 60, 0, 0.320522) 67.08%, #FF8A00 98.04%, rgba(255, 138, 0, 0.33) 132.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
+#secondPage__presentation_interest-container{
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
