@@ -4,80 +4,97 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="img/logo.png" rel="icon">
 </head>
 <body>
-<!-- First Page -->
-<div id="firstPage">
+<!-- Home -->
+<div id="home">
     <!--Github Logo-->
-    <div id="firstPage__github">
+    <div id="first__github">
         <a href="https://github.com/OoNeal/Portfolio" target="_blank">
             <img alt="Github Logo" src="img/github.png">
         </a>
         <span>light</span>
     </div>
     <!-- text -->
-    <div id="firstPage__text">
+    <div id="first__text">
         <!-- Title -->
-        <h1 id="firstPage__text_title">My Portfolio</h1>
+        <h1 id="first__text_title">My Portfolio</h1>
         <!-- Shadow -->
-        <div class="firstPage__text_title_shadows shadow">
+        <div class="first__text_title_shadows shadow">
             <h1>My Portfolio</h1>
         </div>
-        <div class="firstPage__text_title_shadows">
+        <div class="first__text_title_shadows">
             <h1>My Portfolio</h1>
         </div>
-        <div class="firstPage__text_title_shadows shadow">
+        <div class="first__text_title_shadows shadow">
             <h1>My Portfolio</h1>
         </div>
 
         <!-- Light -->
-        <span id="firstPage__text_title_light"></span>
+        <span id="first__text_title_light"></span>
     </div>
 </div>
-<!-- Second Page -->
-<div id="secondPage">
-    <div id="secondPage__presentation">
-        <h2 id="secondPage__presentation_title">Presentation</h2>
-        <div id="secondPage__presentation_text_container">
-            <img alt="Rocket over the Moon" src="img/hackerMan.png">
-            <div id="secondPage__presentation_text">
-                <p>
-                    Hi there ! My name is Elian a student in 2nd year of a bachleor in computer sciences at
-                    Nancy-Charlemagne.<br/>
-                    I don't know yet if I want to be a front-end or back-end developer, knowing that Web Design also
-                    attracts me.<br/>
-                    That's why I'm trying to learn as much as possible about all these fields to find my way.
-                </p>
-            </div>
-            <div id="secondPage__about">
-                <div id="secondPage__about_title_container">
-                    <h1 id="secondPage__about_title">About</h1>
+<!-- Presentation -->
+<div id="presentation">
+    <div id="presentation__container">
+        <section>
+            <h2 class="presentation__title">Presentation</h2>
+            <div id="presentation__introduction_container">
+                <img alt="Rocket over the Moon" src="img/hackerMan.png">
+                <div id="presentation__introduction_text">
+                    <p>
+                        Hi there ! My name is Elian a student in 2nd year of a bachleor in computer sciences at
+                        Nancy-Charlemagne.
+                    </p>
+                    <p>
+                        I don't know yet if I want to be a front-end or back-end developer, knowing that Web Design
+                        also
+                        attracts me.
+                    </p>
+                    <p>
+                        That's why I'm trying to learn as much as possible about all these fields to find my way.
+                    </p>
                 </div>
             </div>
-            <div id="secondPage__presentation_interest-container">
-                <div id="secondPage__presentation_interest_videogames">
+        </section>
+        <section id="presentation__interest_container">
+            <h2 class="presentation__title">My Interest</h2>
+            <div id="presentation__interest_grid">
+                <div class="presentation__interest_element">
                     <img alt="Videogames" src="img/videoGames.png">
                     <p>Videogames</p>
                 </div>
-                <div id="secondPage__presentation_interest_music">
+                <div class="presentation__interest_element">
                     <img alt="Music" src="img/headphone.png">
                     <p>Music</p>
                 </div>
-                <div id="secondPage__presentation_interest_clapperBoard">
+                <div class="presentation__interest_element">
                     <img alt="Sport" src="img/clapperBoard.png">
                     <p>Sport</p>
-                    <div id="secondPage__presentation_interest_sport">
-                        <img alt="Fencing" src="img/fencing.png">
-                        <p>Fencing</p>
-                    </div>
-                    <div id="secondPage__presentation_interest_cooking">
-                        <img alt="Cooking" src="img/cooking.png">
-                        <p>Cooking</p>
-                    </div>
                 </div>
-                <div id="secondPage__presentation_interest_telescope">
+                <div class="presentation__interest_element">
+                    <img alt="Fencing" src="img/fencing.png">
+                    <p>Fencing</p>
+                </div>
+                <div class="presentation__interest_element">
+                    <img alt="Cooking" src="img/cooking.png">
+                    <p>Cooking</p>
+                </div>
+                <div class="presentation__interest_element">
                     <img alt="Telescope" src="img/telescope.png">
-                    <p>Telescope</p>
-                <script src="scripts/animation.js"></script>
+                    <p>Univers</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="about">
+    <div id="about_title_container">
+        <h1>About</h1>
+    </div>
+</div>
+<script src="scripts/animation.js"></script>
 </body>
 </html>

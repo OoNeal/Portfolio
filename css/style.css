@@ -8,7 +8,10 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 
-    background-color: #000000;
+    width: 100vw;
+    height: auto;
+
+    background-color: #0a0a0a;
 
     color: #ffffff;
     font-family: Montserrat, sans-serif;
@@ -20,7 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: black;
+    background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -28,16 +31,16 @@ body {
     border-radius: 10px;
 }
 
-/* ------------- First Page ------------- */
+/* ------------- Home -------------- */
 
-#firstPage {
-    margin-bottom: 300px;
+#home {
+    margin-bottom: 200px;
     height: 100vh;
 }
 
-/* ------------- First Page Github Logo ------------- */
+/* ------------- Home Github Logo ------------- */
 
-#firstPage__github {
+#first__github {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -53,7 +56,7 @@ body {
     animation-name: appear;
 }
 
-#firstPage__github a {
+#first__github a {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -61,24 +64,24 @@ body {
     z-index: 1;
 }
 
-#firstPage__github img {
+#first__github img {
     width: 100%;
     height: 100%;
 }
 
-#firstPage__github span {
+#first__github span {
     position: relative;
 
     width: 100%;
     height: 100%;
-    background: radial-gradient(#ffffff 0%, #ffffff 30%, #ff9b00 90%);
-    filter: blur(20px);
+    background: radial-gradient(#ffffff 0%, #ffffff 10%, #ff9a00 90%);
+    filter: blur(15px);
     border-radius: 100%;
 }
 
-/* ------------- First Page text -------------*/
+/* ------------- Home Titles -------------*/
 
-#firstPage__text {
+#first__text {
     height: 100%;
     width: 100%;
 
@@ -92,25 +95,25 @@ body {
     text-transform: uppercase;
 }
 
-#firstPage__text_title {
+#first__text_title {
     position: absolute;
     z-index: 1;
 
     color: #8B8B8B;
 }
 
-#firstPage__text_title_light {
+#first__text_title_light {
     width: 100%;
     height: 100%;
 
-    background: radial-gradient(30% 15% at 50% 50%, #cc6e11 0%, rgba(255, 153, 0, 0.0) 50%);
+    background: radial-gradient(35% 15% at 50% 50%, #ff9a00 0%, rgba(255, 153, 0, 0.0) 50%);
     filter: blur(100px);
 
     animation-duration: 1500ms;
     animation-name: appear;
 }
 
-.firstPage__text_title_shadows {
+.first__text_title_shadows {
     position: absolute;
 
     font-size: 6.5vw;
@@ -118,16 +121,16 @@ body {
     white-space: nowrap;
 }
 
-.firstPage__text_title_shadows:nth-child(4) {
+.first__text_title_shadows:nth-child(4) {
     margin-bottom: 10%;
     opacity: 0.10;
 }
 
-.firstPage__text_title_shadows:nth-child(3) {
+.first__text_title_shadows:nth-child(3) {
     opacity: 0.20;
 }
 
-.firstPage__text_title_shadows:nth-child(2) {
+.first__text_title_shadows:nth-child(2) {
     margin-top: 10%;
     opacity: 0.10;
 }
@@ -137,53 +140,41 @@ body {
     animation-name: shadow;
 }
 
-/* ------------- First Page text Animation -------------*/
+/* ------------- Presentation ------------- */
 
-@-webkit-keyframes shadow {
-    0% {
-        margin: 0;
-    }
+#presentation {
+    margin-bottom: 200px;
 }
 
-@-webkit-keyframes appear {
-    0% {
-        filter: blur(10px);
-        opacity: 0.0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* ------------- Second Page ------------- */
-
-#secondPage {
-    height: 100vh;
-}
-
-#secondPage__presentation {
+#presentation__container {
     margin: 0;
+    padding:0;
+
     width: 100%;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-#secondPage__presentation_title {
-    margin: 0;
-    padding: 1em 0 0 0.5em;
+.presentation__title {
+    text-align: center;
 
     font-size: 3.5vw;
     font-weight: 600;
     text-transform: uppercase;
 
-    background: linear-gradient(180deg, #ff9900 40%, #000000 90%);
+    background: linear-gradient(180deg, #ff9a00 10%, #0a0a0a 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
-#secondPage__presentation_text_container {
+#presentation__introduction_container{
     margin: 0;
-    padding: 0 0 0 0.5em;
+    padding: 0;
 
     display: flex;
     flex-direction: row;
@@ -191,32 +182,81 @@ body {
     align-items: center;
 }
 
-#secondPage__presentation_text {
+#presentation__introduction_text {
     margin: 0 0 0 1em;
 
-    max-width: 40%;
+    width: 40vw;
 
     font-size: 1.4em;
 }
 
-#secondPage__about {
+#presentation__introduction_text p {
+    margin: 0.5em;
+    padding: 0;
+}
+
+#presentation__interest_container {
     margin: 0;
+    padding: 0;
+
+    width: 40%;
+}
+
+
+#presentation__interest_grid{
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.presentation__interest_element {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation__interest_element img {
+    width: 40%;
+    height: 100%;
+}
+
+.presentation__interest_element p {
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ------------- ABOUT ------------- */
+
+#about {
+    margin-bottom: 200px;
     padding: 0;
 
     width: 100%;
 }
 
-#secondPage__about_title_container {
+#about_title_container {
     position: absolute;
     z-index: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+
+    text-align: center;
 }
 
-#secondPage__about_title {
+#about_title_container h1 {
     margin: 0;
     padding: 0;
 
@@ -224,16 +264,8 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 
-    background: linear-gradient(180.26deg, rgba(0, 0, 0, 0.24) 18.26%, rgba(111, 60, 0, 0.320522) 67.08%, #FF8A00 98.04%, rgba(255, 138, 0, 0.33) 132.58%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 20%, rgba(111, 60, 0, 0.320522) 70%, #FF8A00 100%, rgba(255, 138, 0, 0.33) 130%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-}
-
-#secondPage__presentation_interest-container{
-    margin: 0;
-    padding: 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
