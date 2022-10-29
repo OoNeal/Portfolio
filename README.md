@@ -5,7 +5,7 @@
  ## The beginning
  ### The chosen
 
-I have been looking for several looks for my portfolio in different styles.
+I have been looking for several looks for my portfolio in different styles by using **Figma**.
 But only one of them will be the one I choose.
 
 ##### <center>First Portfolio</center>
