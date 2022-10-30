@@ -59,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section id="presentation__interest_container">
+        <section id="presentation__interest_section">
             <h2 class="presentation__title">My Interest</h2>
             <div id="presentation__interest_grid">
                 <div class="presentation__interest_element">
@@ -84,15 +84,66 @@
                 </div>
                 <div class="presentation__interest_element">
                     <img alt="Telescope" src="img/telescope.png">
-                    <p>Univers</p>
+                    <p>Universe</p>
                 </div>
             </div>
         </section>
     </div>
 </div>
 <div id="about" class="div-animation">
-    <div id="about_title_container">
-        <h1>About</h1>
+    <h1 class="title__background">About</h1>
+    <div id="about__container">
+        <section id="about__education_section">
+            <h2 class="about__title">Education</h2>
+            <div class="about__education_container">
+                <h3 class="about__education_bold">2021 - 2024</h3>
+                <h3 class="about__education_bold">Bachelor in Computer Sciences</h3>
+                <p class="about__education_description">IUT Nancy-Charlemagne</p>
+                <p class="about__education_description">Nancy, France</p>
+            </div>
+            <div class="about__education_container">
+                <h3 class="about__education_bold">2017 - 2020</h3>
+                <h3 class="about__education_bold">Technological Baccalaureate</h3>
+                <p class="about__education_description">Lycée Jean Baptiste Vuilleaume</p>
+                <p class="about__education_description">Mirecourt, France</p>
+            </div>
+        </section>
+        <section id="about__experience_section">
+            <h2 class="about__title">Experience</h2>
+            <h3 class="about__education_bold">2019</h3>
+            <h3 class="about__education_bold">Computer maintenance intership</h3>
+            <p class="about__education_description">Hospital Center</p>
+            <p class="about__education_description">Vittel, France</p>
+        </section>
+        <section id="about__languages_section">
+            <h2 class="about__title">Languages</h2>
+            <div id="about__languages_grid">
+                <div class="about__languages_container">
+                    <svg>
+                        <circle cx="50" cy="50" r="40" class="about__languages_cercle"/>
+                        <circle cx="50" cy="50" r="35" class="about__languages_cercle"/>
+                        <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" class="about__languages_pourcentage">100%</text>
+                    </svg>
+                    <p class="about__languages_name">French</p>
+                </div>
+                <div class="about__languages_container">
+                    <svg>
+                        <circle style="stroke-dasharray: 190" cx="50" cy="50" r="40" class="about__languages_cercle" />
+                        <circle style="stroke-dasharray: 165" cx="50" cy="50" r="35" class="about__languages_cercle" />
+                        <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" class="about__languages_pourcentage">75 %</text>
+                    </svg>
+                    <p class="about__languages_name">English</p>
+                </div>
+                <div class="about__languages_container">
+                    <svg>
+                        <circle style="stroke-dasharray: 10" cx="50" cy="50" r="40" class="about__languages_cercle" />
+                        <circle style="stroke-dasharray: 7" cx="50" cy="50" r="35" class="about__languages_cercle" />
+                        <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" class="about__languages_pourcentage">30 %</text>
+                    </svg>
+                    <p class="about__languages_name">Spanish</p>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 <script src="scripts/animation.js"></script>
