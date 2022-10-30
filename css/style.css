@@ -11,7 +11,7 @@ body {
     width: 100vw;
     height: auto;
 
-    background-color: #0a0a0a;
+    background-color: #0e0d0e;
 
     color: #ffffff;
     font-family: Montserrat, sans-serif;
@@ -23,12 +23,22 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #0e0d0e;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #616161;
     border-radius: 10px;
+}
+
+.div-animation {
+    visibility: hidden;
+}
+
+.div-animation_active {
+    visibility: visible;
+    animation: fadein 1s ease-in;
+    -webkit-animation: fadein 1s ease-in;
 }
 
 /* ------------- Home -------------- */
@@ -166,7 +176,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 
-    background: linear-gradient(180deg, #ff9a00 10%, #0a0a0a 80%);
+    background: linear-gradient(180deg, #ff9a00 10%, #0e0d0e 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -264,7 +274,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 20%, rgba(111, 60, 0, 0.320522) 70%, #FF8A00 100%, rgba(255, 138, 0, 0.33) 130%);
+    background: linear-gradient(180deg, #0e0d0e, #8a5300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
