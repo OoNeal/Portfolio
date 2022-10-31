@@ -425,14 +425,18 @@ svg{
 }
 
 .skills__image{
-    margin: -3em 0.5em 0 0;
+    z-index: 1;
+
+    margin: 1em 2em 3em 0;
     padding: 0;
 
-    width: 150px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .skills__level_container{
+    z-index: 2;
+
     margin: 3em 0 0 -2.5em;
     padding: 0;
 }
@@ -454,5 +458,9 @@ svg{
 
 .skills__level_square{
     fill: white;
+}
 
+.incomplete{
+    fill: none;
+    stroke: white;
 }
