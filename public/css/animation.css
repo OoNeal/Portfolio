@@ -1,0 +1,24 @@
+@-webkit-keyframes shadow {
+    0% {
+        margin: 0;
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
