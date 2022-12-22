@@ -14,6 +14,21 @@ window.addEventListener('scroll', function (e) {
     }
 });
 
+//if a user scroll the class first__scroll will disappear
+window.addEventListener('scroll', function (e) {
+    const element = document.getElementById('first__scroll');
+    const position = element.getBoundingClientRect();
+
+    if (position.top <= window.innerHeight - position.height / 2 && position.bottom >= position.height / 2) {
+        element.classList.add('first__scroll_hide');
+    }
+    if (element.classList.contains('first__scroll_hide')) {
+        setTimeout(function () {
+            element.style.display = 'none';
+        }, 1500);
+    }
+});
+
 window.addEventListener('mousemove', function (f) {
     // const images equal all images
     const images = document.querySelectorAll('img');
