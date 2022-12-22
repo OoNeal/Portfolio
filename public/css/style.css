@@ -101,6 +101,9 @@ svg{
 #home {
     margin-bottom: 200px;
     height: 100vh;
+
+    animation-duration: 1500ms;
+    animation-name: appear;
 }
 
 /* ------------- Home Github Logo ------------- */
@@ -116,9 +119,6 @@ svg{
 
     width: 8vw;
     height: 7.5vw;
-
-    animation-duration: 1500ms;
-    animation-name: appear;
 }
 
 #first__github a {
@@ -173,9 +173,6 @@ svg{
 
     background: radial-gradient(35% 15% at 50% 50%, #ff9a00 0%, rgba(255, 153, 0, 0.0) 50%);
     filter: blur(100px);
-
-    animation-duration: 1500ms;
-    animation-name: appear;
 }
 
 .first__text_title_shadows {
@@ -203,6 +200,26 @@ svg{
 .shadow {
     animation-duration: 1500ms;
     animation-name: shadow;
+}
+
+/* ------------- Home Scroll ------------- */
+
+#first__scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.first__scroll_hide{
+    animation-duration: 1500ms;
+    animation-name: disappear;
+}
+
+#first__scroll_arrow {
+    margin-left: 10px;
+    font-size: 1.5vw;
 }
 
 /* ------------- Presentation ------------- */
@@ -438,7 +455,6 @@ svg{
     grid-column-gap: 1em;
 
     width: 100%;
-
 }
 
 .skills__title{
@@ -452,7 +468,7 @@ svg{
     font-weight: 600;
     text-transform: uppercase;
 
-    background: linear-gradient(180deg, #cbcbcb, #0e0d0e 70%);
+    background: linear-gradient(180deg, #cbcbcb, #0e0d0e 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
